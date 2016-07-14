@@ -403,12 +403,12 @@ public class DKImagePickerController : UINavigationController {
 	}
 	
 	public func dismiss() {
-		self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+//		self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
 		self.didCancel?()
 	}
 	
     public func done() {
-		self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+//		self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         self.didSelectAssets?(assets: self.selectedAssets)
     }
     
